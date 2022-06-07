@@ -13,16 +13,16 @@
   <body>
     <header class="header">
       <div class="heading">
-        <h1 class="logo"><a href="index.html">Recette</a></h1>
+      <a><%= link_to "Recette", root_path, class: "logo"%></a>
       </div>
       <div class="navbar">
         
           <% if user_signed_in? %>
-            <li><%= link_to current_user.nickname, "#", class: "user-nickname" %></li>
-            <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %></li>
+            <a><%= link_to current_user.nickname, "#", class: "user-nickname" %></a>
+            <a><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %></a>
           <% else %>
-            <li><%= link_to 'ログイン', new_user_session_path, class: "login" %></li>
-            <li><%= link_to '新規登録', new_user_registration_path, class: "sign-up" %></li>
+            <a><%= link_to 'ログイン', new_user_session_path, class: "login" %></a>
+            <a><%= link_to '新規登録', new_user_registration_path, class: "sign-up" %></a>
           <% end %>
         </ul>
       </div>

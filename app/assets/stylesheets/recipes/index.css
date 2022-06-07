@@ -1,0 +1,115 @@
+.header {
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 1vh 0;
+  background-color: rgb(142, 225, 119);
+}
+
+.nav-lists{
+}
+
+.nav-bar{
+  display: flex;
+  list-style: none;
+  align-items: flex-end;
+}
+
+
+.user-nickname {
+  text-decoration: none;
+  margin-right: 3vw;
+  color: #333333;
+  font-weight: bold;
+}
+
+
+.logout {
+  text-decoration: none;
+  color: #333333;
+}
+
+.login {
+  text-decoration: none;
+  line-height: 32px;
+  margin-right: 3vw;
+  color: #333333;
+}
+
+.sign-up {
+  text-decoration: none;
+  color: #333333;
+}
+.body {
+  height: 100%;
+  background-color: blue;
+}
+/******************************************************** 
+　ページタイトル
+********************************************************/
+.page-title {
+  padding: 50px 0 150px;
+}
+
+.page-title__main {
+  font-size: 64px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.page-title__sub {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/******************************************************** 
+　サービス内容ページ
+********************************************************/
+.service-main {
+  width: 1366px;
+}
+
+.service-items {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 100px 180px;
+}
+
+.service-item {
+  width: 350px;
+  height: 420px;
+}
+
+.service-image {
+  width: 350px;
+  height: 275px;
+}
+
+.service-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px 5px 0 0;
+  object-fit: cover;
+}
+
+.service-text {
+  width: 100%;
+  height: 120px;
+  padding: 20px;
+  border-radius: 0 0 5px 5px;
+  background-color: #DADADA;
+}
+
+.service-text__main {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.service-text__sub {
+  margin-top: 14px;
+  font-size: 14px;
+  line-height: 17px
+}

@@ -7,26 +7,9 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <header class="header">
-      <div class="heading">
-      <a><%= link_to "Recette", root_path, class: "logo"%></a>
-      </div>
-      <div class="navbar">
-        
-          <% if user_signed_in? %>
-            <a><%= link_to current_user.nickname, "#", class: "user-nickname" %></a>
-            <a><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %></a>
-          <% else %>
-            <a><%= link_to 'ログイン', new_user_session_path, class: "login" %></a>
-            <a><%= link_to '新規登録', new_user_registration_path, class: "sign-up" %></a>
-          <% end %>
-        </ul>
-      </div>
-    </header>
     <%= yield %>
   </body>
 </html>

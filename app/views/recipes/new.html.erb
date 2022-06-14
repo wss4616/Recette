@@ -21,6 +21,14 @@
       </div>
       <%= f.text_area :title, class:"recipes-title", id:"recipe-title", placeholder:"料理名（必須 30文字まで)", maxlength:"30" %>
 
+      <div class="new-recipes-genre">
+        <div class="weight-bold-text">
+          ジャンル
+          <span class="indispensable">必須</span>
+        </div>
+      <%= f.collection_select(:genre_id, Genre.all, :id, :name, {}, {class:"genre-select"}) %>
+      </div>
+
 
       <div class="recipes-recipe">
         <div class="weight-bold-text">
@@ -38,6 +46,9 @@
         </div>
         <%= f.text_area :text, class:"recipes-text", id:"recipe-info", placeholder:"料理の作り方（必須 1,000文字まで）例）材料を全て加えた後炒めて、火が通ってきたら調味料の☆を加え、煮込んで完成です。" ,rows:"7" ,maxlength:"1000" %>
       </div>
+
+
+
 
       
     </div>

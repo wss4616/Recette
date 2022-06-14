@@ -95,7 +95,7 @@
     <ul class='item-lists'>
       <% @recipes.each do |recipe| %>
       <li class='list'>
-        <%= link_to recipe_path(recipe.id) do %>
+        <%= link_to recipes_path(recipe.id) do %>
         <div class='recipe-img-content'>
           <%= image_tag recipe.image, class: "recipe-img" %>
         </div>
@@ -109,7 +109,7 @@
       <% end %>      
 
 
-    <% if @items.blank? %>
+    <% if @resipes.blank? %>
       <li class='list-unstyled'>
         <%= link_to '#' do %>
         <%= image_tag "https://tech-master.s3.amazonaws.com/uploads/curriculums/images/Rails1-4/sample.jpg", class: "recipe-img" %>

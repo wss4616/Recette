@@ -1,6 +1,8 @@
 class RecipesController < ApplicationController
   def index
     @recipes = Recipe.all
+    #@articles = Article.order("created_at DESC")投稿順に並ぶように
+
   end
 
   def new
